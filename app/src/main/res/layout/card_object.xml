@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="20dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginVertical="2dp"
+    android:layout_marginHorizontal="15dp"
+    app:cardBackgroundColor="@color/primaryDark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/profileImageView_card"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            app:c_border="true"
+            app:c_border_width="2dp"
+            app:c_border_color="@color/primary"
+            android:padding="5dp"
+            android:src="@drawable/ic_object"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/profileImageView_card"
+            android:layout_toRightOf="@id/profileImageView_card">
+
+            <TextView
+                android:id="@+id/designationTextView"
+                android:text="Designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/longitudeTextView"
+                android:text="Longitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/latitudeTextView"
+                android:text="Latitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/altitudeTextView"
+                android:text="Altitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:src="@drawable/ic_more"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

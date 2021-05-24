@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:orientation="vertical"
+    android:background="@color/primaryVeryDark"
+    tools:context=".ObjectDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/profileIv"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            app:c_border="true"
+            app:c_border_color="@color/primary"
+            app:c_border_width="1dp"
+            android:src="@drawable/ic_add_location_verydark"/>
+
+        <TextView
+            android:id="@+id/designationEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:textAlignment="center"
+            android:layout_span="3"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:padding="15dp"
+            android:text="Designation"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="2">
+            <TableRow android:layout_marginBottom="20dp">
+                <TextView
+                    android:id="@+id/descriptionEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary"
+                    android:textAlignment="center"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:padding="15dp"
+                    android:text="The description of the Object"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:paddingRight="30dp"
+                    android:text="Longitude"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/longitudeEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryShiny"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:paddingLeft="40dp"
+                    android:text="xx.xxxx"
+                    android:textStyle="normal"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:paddingRight="30dp"
+                    android:text="Latitude"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/latitudeEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryShiny"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:paddingLeft="40dp"
+                    android:text="xx.xxxx"
+                    android:textStyle="normal"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:paddingRight="30dp"
+                    android:text="Altitude"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/altitudeEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryShiny"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:paddingLeft="40dp"
+                    android:text="XXX"
+                    android:textStyle="normal"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:paddingRight="30dp"
+                    android:text="Added in "
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/addedDateTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryShiny"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:paddingLeft="40dp"
+                    android:text="dd-mm-yyyy"
+                    android:textStyle="normal"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:paddingRight="30dp"
+                    android:text="Updated in "
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/updatedDateTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryShiny"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:paddingLeft="40dp"
+                    android:text="dd-mm-yyyy"
+                    android:textStyle="normal"/>
+            </TableRow>
+
+        </TableLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

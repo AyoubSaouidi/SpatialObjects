@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryShiny</item>
+        <item name="colorPrimaryDark">@color/primaryVeryDark</item>
+        <item name="colorAccent">@color/primaryDark</item>
+        <item name="actionMenuTextColor">@color/primaryVeryDark</item>
+        <item name="titleTextColor">@color/primaryVeryDark</item>
+        <item name="subtitleTextColor">@color/primaryDark</item>
+        <item name="actionBarSize">70dp</item>
+    </style>
+</resources>

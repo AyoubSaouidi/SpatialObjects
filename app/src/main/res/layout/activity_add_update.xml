@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryVeryDark"
+    tools:context=".AddUpdateActivity">
+
+    <!-- Image Picker (ImageVIEW) -->
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/profileImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:c_border="true"
+        app:c_border_width="2dp"
+        app:c_border_color="@color/primaryWhite"
+        android:src="@drawable/ic_pickphoto"/>
+
+
+
+    <!-- Designation EditText -->
+    <EditText
+        android:id="@+id/designationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImageView"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="10dp"
+        android:hint="Designation"
+        android:inputType="textPersonName|textCapWords"
+        android:textColorHint="@color/primary"
+        android:textColor="@color/primaryShiny"
+        android:background="@drawable/input_selector"
+        />
+
+    <!-- Block of location -->
+    <LinearLayout
+        android:id="@+id/block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/designationEditText"
+        android:weightSum="5">
+
+        <!-- Block of location -->
+        <LinearLayout
+            android:id="@+id/locationBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <!-- Longitude EditText -->
+            <EditText
+                android:id="@+id/longitudeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="30dp"
+                android:padding="10dp"
+                android:hint="Longitude (°)"
+                android:inputType="numberSigned"
+                android:textColorHint="@color/primary"
+                android:textColor="@color/primaryShiny"
+                android:background="@drawable/input_selector"
+                />
+
+            <!-- Latitude EditText -->
+            <EditText
+                android:id="@+id/latitudeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/longitudeEditText"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="30dp"
+                android:padding="10dp"
+                android:hint="Latitude (°)"
+                android:inputType="numberSigned"
+                android:textColorHint="@color/primary"
+                android:textColor="@color/primaryShiny"
+                android:background="@drawable/input_selector"
+                />
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addLocationBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:elevation="6dp"
+            app:backgroundTint="@color/primary"
+            android:src="@drawable/ic_add_location_verydark"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+
+
+    <!-- Altitude EditText -->
+    <EditText
+        android:id="@+id/altitudeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/block"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="10dp"
+        android:hint="Altitude (m)"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/primary"
+        android:textColor="@color/primaryShiny"
+        android:background="@drawable/input_selector"
+        />
+
+    <!-- Designation EditText -->
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:gravity="start"
+        android:layout_below="@id/altitudeEditText"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="10dp"
+        android:hint="Courte description"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textColorHint="@color/primary"
+        android:textColor="@color/primaryShiny"
+        android:background="@drawable/input_selector"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="25dp"
+        app:elevation="6dp"
+        app:backgroundTint="@color/primaryShiny"
+        android:src="@drawable/ic_done_verydark"/>
+
+</RelativeLayout>
